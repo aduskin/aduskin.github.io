@@ -1,0 +1,45 @@
+.thin { font-weight: 300; }
+.thick { font-weight: 700; }
+
+a.demo {
+  font-size: 30px;
+  color: #E8E3D8;
+  text-decoration: none;
+  position: relative;
+  display: block;margin-bottom: -10px;
+}
+
+p.desc {
+    text-align: center;
+  font-weight: 100;
+  font-size: 80%;
+  margin: 1px;
+}
+
+[class^="link-"] {
+  display: inline-block;
+}
+
+/* linkone */
+.link-1 a.demo:before, .link-1 a.demo:after {
+    content: '';
+    border-bottom: solid 1px #E8E3D8;
+    position: absolute;
+    bottom: 18%;
+    width: 0;
+  }
+  
+  .link-1 a.demo:before { left: 0; }
+  .link-1 a.demo:after { right: 0; }
+  
+  .link-1 a.demo:hover:before, .link-1 a.demo:hover:after {
+    width: 50%;
+  }
+  
+  .link-1 a.demo:before, .link-1 a.demo:after {
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+
+ 
